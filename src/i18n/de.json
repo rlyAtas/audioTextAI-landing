@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Kostenlose KI Audio-Transkription | 98 Sprachen | AudioTextAI",
+    "description": "Wandeln Sie Audio in Text mit KI um. 98 Sprachen, 95%+ Genauigkeit. Kostenloser Telegram Bot für Sprachnachrichten-Transkription ohne Registrierung"
+  },
+  "hero": {
+    "title": "Audio in Text verwandeln",
+    "subtitle": "Verwandeln Sie Sprachnachrichten mit künstlicher Intelligenz in präzisen Text. 95%+ Genauigkeit, unterstützt alle Formate, völlig kostenlos in Telegram!",
+    "features": "Kostenlos • Schnell • Präzise"
+  },
+  "features": {
+    "title": "Funktionen",
+    "subtitle": "Alles was Sie für perfekte Audio-Transkription brauchen",
+    "items": [
+      {
+        "title": "Präzise Transkription",
+        "description": "Fortschrittliche KI bietet hochqualitative Textkonvertierung mit exzellenter Genauigkeit",
+        "icon": "microphone"
+      },
+      {
+        "title": "Blitzschnell",
+        "description": "Erhalten Sie Ihre Transkriptionsergebnisse schnell und effizient mit unserer optimierten Verarbeitung",
+        "icon": "lightning"
+      },
+      {
+        "title": "Mehrere Formate",
+        "description": "Unterstützung für Sprachnachrichten, Audiodateien und verschiedene Audioformate",
+        "icon": "audio"
+      },
+      {
+        "title": "Mehrsprachig",
+        "description": "Transkribieren Sie Audio in 98 Sprachen mit automatischer Erkennung",
+        "icon": "globe"
+      },
+      {
+        "title": "Sicher & Privat",
+        "description": "Ihre Audiodateien werden sicher verarbeitet und nicht dauerhaft gespeichert",
+        "icon": "shield"
+      },
+      {
+        "title": "Einfach & Kostenlos",
+        "description": "Keine Registrierung, keine Bezahlung - senden Sie einfach Audio an den Telegram Bot und erhalten Sie Ergebnisse",
+        "icon": "gift"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Was Nutzer sagen",
+    "subtitle": "Echte Geschichten der AudioTextAI Nutzung",
+    "items": [
+      {
+        "text": "Die Transkription hat meinen Ansatz beim Englischlernen völlig verändert. Früher konnte ich oft nicht verstehen, was Muttersprachler sagten — alles verschmolz zu einem Strom. Aber als ich anfing, Audio mit Transkription zu hören, begannen sich Wörter und Ausdrücke zu verständlichen Phrasen zu formen. Ich begann zu bemerken, wie Sätze aufgebaut sind, wie echte Gesprächsausdrücke verwendet werden. Das gab mir Vertrauen und verbesserte mein Hörverständnis erheblich. Jetzt höre ich nicht nur — ich verstehe wirklich.",
+        "author": "Elena",
+        "role": ""
+      },
+      {
+        "text": "Ich nehme oft Interviews mit einem Diktiergerät auf — und die Transkription kostete früher unheimlich viel Zeit und Nerven. Mit der Transkription wurde alles einfacher: Ich lade Audio hoch und in einer Minute habe ich fertigen Text. Das spart mir wirklich, besonders wenn Deadlines knapp sind. Außerdem ist es praktisch zum Nachlesen und Finden der richtigen Zitate. Jetzt verbringe ich mehr Zeit mit dem Wesentlichen — nicht mit dem Vor- und Zurückspulen von Aufnahmen.",
+        "author": "Maria",
+        "role": "Journalistin"
+      },
+      {
+        "text": "Bei der Arbeit erhalte ich oft Sprachnachrichten, was nicht immer praktisch ist — besonders während Meetings oder an lauten Orten. Die Transkription wurde zu einem echten Lebensretter: Ich kann schnell das Wesentliche lesen, ohne Zeit mit dem Zuhören zu verbringen. Außerdem hilft es mir, Business-Englisch besser zu verstehen.",
+        "author": "David",
+        "role": "Manager"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, AudioTextAI auszuprobieren?",
+    "subtitle": "Beginnen Sie jetzt mit der KI-Transkription — keine Registrierung, keine Bezahlung, keine Limits. Senden Sie einfach Audio und erhalten Sie Ergebnisse in Sekunden.",
+    "button": "@AudioTextAI_bot in Telegram öffnen"
+  },
+  "footer": {
+    "copyright": "© 2025 AudioTextAI. Alle Rechte vorbehalten.",
+    "slogan": "Audio in Text verwandeln",
+    "telegram": "@AudioTextAI_bot"
+  }
+}

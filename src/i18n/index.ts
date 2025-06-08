@@ -1,7 +1,8 @@
 import enTranslations from './en.json';
 import ruTranslations from './ru.json';
+import deTranslations from './de.json';
 
-export type Language = 'ru' | 'en';
+export type Language = 'ru' | 'en' | 'de';
 
 export interface Translations {
   meta: {
@@ -46,6 +47,7 @@ export interface Translations {
 const translations: Record<Language, Translations> = {
   en: enTranslations,
   ru: ruTranslations,
+  de: deTranslations,
 };
 
 export function getTranslations(lang: Language): Translations {
@@ -63,4 +65,4 @@ export function t(lang: Language, key: string): string | string[] {
   return value || key;
 }
 
-export const supportedLanguages: Language[] = ['en', 'ru'];
+export const supportedLanguages: Language[] = ['en', 'ru', 'de'];

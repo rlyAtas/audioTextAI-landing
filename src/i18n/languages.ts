@@ -20,15 +20,14 @@ export const languages: Record<string, Language> = {
     nativeName: 'Русский',
     flag: '🇷🇺',
     path: '/ru'
+  },
+  de: {
+    code: 'de',
+    name: 'German',
+    nativeName: 'Deutsch',
+    flag: '🇩🇪',
+    path: '/de'
   }
-  // Легко добавить новые языки:
-  // es: {
-  //   code: 'es',
-  //   name: 'Spanish',
-  //   nativeName: 'Español',
-  //   flag: '🇪🇸',
-  //   path: '/es'
-  // }
 };
 
 export const defaultLanguage = 'en';
