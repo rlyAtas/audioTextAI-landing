@@ -24,36 +24,36 @@ const t = getTranslations(currentLang);
 >
   <main class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
     <!-- Hero секция -->
-    <section class="flex items-center justify-center min-h-screen px-6 py-16">
+    <section class="flex items-center justify-center min-h-screen px-4 sm:px-6 py-8 sm:py-16">
       <div class="max-w-4xl mx-auto text-center">
         <!-- Логотип -->
-        <div class="mb-8">
+        <div class="mb-6 sm:mb-8">
           <img 
             src="/logo.png" 
             alt="AudioTextAI Logo" 
-            class="w-24 h-24 mx-auto mb-6 rounded-2xl shadow-lg"
+            class="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 sm:mb-6 rounded-2xl shadow-lg"
           />
         </div>
 
         <!-- Заголовок -->
-        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 class="hero-title font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
           {t.hero.title}
         </h1>
 
         <!-- Подзаголовок -->
-        <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p class="hero-subtitle text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed">
           {t.hero.subtitle}
         </p>
 
         <!-- CTA кнопка -->
-        <div class="mb-8">
+        <div class="mb-6 sm:mb-8">
           <a 
             href="https://t.me/AudioTextAI_bot" 
             target="_blank" 
             rel="noopener"
-            class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            class="hero-cta-button inline-flex items-center gap-2 sm:gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
               <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
             </svg>
             {t.cta.button}
@@ -61,7 +61,7 @@ const t = getTranslations(currentLang);
         </div>
 
         <!-- Дополнительная информация -->
-        <p class="text-sm text-gray-500">
+        <p class="hero-features text-gray-500">
           {t.hero.features}
         </p>
       </div>
