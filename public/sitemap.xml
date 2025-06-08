@@ -13,6 +13,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
@@ -27,6 +28,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
@@ -41,6 +43,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
@@ -55,6 +58,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
@@ -69,6 +73,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
@@ -83,6 +88,22 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
+  </url>
+
+  <!-- Ukrainian version -->
+  <url>
+    <loc>https://audiotextai.site/uk/</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://audiotextai.site/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://audiotextai.site/ru/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://audiotextai.site/uk/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
   </url>
 
