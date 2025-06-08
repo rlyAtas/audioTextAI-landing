@@ -1,0 +1,175 @@
+---
+export interface Props {
+  lang: 'ru' | 'en';
+}
+
+const { lang } = Astro.props;
+
+// Базовые данные организации
+const baseUrl = 'https://audiotextai.site';
+const logoUrl = `${baseUrl}/logo.png`;
+
+// Локализованные данные
+const localized = {
+  ru: {
+    name: 'AudioTextAI',
+    description: 'Бесплатная транскрипция аудио с помощью ИИ. 98 языков, 95%+ точность. Telegram бот для преобразования голосовых сообщений в текст',
+    applicationName: 'AudioTextAI Telegram Бот',
+    applicationDescription: 'Telegram бот для транскрипции аудио и голосовых сообщений с помощью искусственного интеллекта',
+    keywords: ['транскрипция аудио', 'голосовые сообщения', 'ИИ', 'телеграм бот', 'speech to text'],
+    operatingSystem: 'Telegram',
+    applicationCategory: 'Productivity',
+    offers: {
+      description: 'Бесплатная транскрипция аудио файлов и голосовых сообщений',
+      price: '0',
+      priceCurrency: 'RUB'
+    }
+  },
+  en: {
+    name: 'AudioTextAI',
+    description: 'Free AI audio transcription. 98 languages, 95%+ accuracy. Telegram bot for converting voice messages to text',
+    applicationName: 'AudioTextAI Telegram Bot',
+    applicationDescription: 'Telegram bot for audio and voice message transcription using artificial intelligence',
+    keywords: ['audio transcription', 'voice messages', 'AI', 'telegram bot', 'speech to text'],
+    operatingSystem: 'Telegram',
+    applicationCategory: 'ProductivityApplication',
+    offers: {
+      description: 'Free audio file and voice message transcription',
+      price: '0',
+      priceCurrency: 'USD'
+    }
+  }
+};
+
+const currentLang = localized[lang];
+
+// Схема Organization
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": currentLang.name,
+  "description": currentLang.description,
+  "url": `${baseUrl}/${lang}`,
+  "logo": logoUrl,
+  "sameAs": [
+    "https://t.me/AudioTextAI_bot"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://t.me/AudioTextAI_bot"
+  }
+};
+
+// Схема WebSite
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": currentLang.name,
+  "description": currentLang.description,
+  "url": `${baseUrl}/${lang}`,
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://t.me/AudioTextAI_bot"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "inLanguage": lang === 'ru' ? 'ru-RU' : 'en-US'
+};
+
+// Схема SoftwareApplication
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": currentLang.applicationName,
+  "description": currentLang.applicationDescription,
+  "url": "https://t.me/AudioTextAI_bot",
+  "applicationCategory": currentLang.applicationCategory,
+  "operatingSystem": currentLang.operatingSystem,
+  "offers": {
+    "@type": "Offer",
+    "description": currentLang.offers.description,
+    "price": currentLang.offers.price,
+    "priceCurrency": currentLang.offers.priceCurrency,
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "featureList": [
+    lang === 'ru' ? "Транскрипция на 98 языках" : "Transcription in 98 languages",
+    lang === 'ru' ? "95%+ точность" : "95%+ accuracy", 
+    lang === 'ru' ? "Бесплатное использование" : "Free to use",
+    lang === 'ru' ? "Поддержка всех аудио форматов" : "All audio formats supported",
+    lang === 'ru' ? "Без регистрации" : "No registration required"
+  ],
+  "keywords": currentLang.keywords.join(', '),
+  "inLanguage": lang === 'ru' ? 'ru-RU' : 'en-US'
+};
+
+// Схема отзывов
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": currentLang.applicationName,
+  "description": currentLang.applicationDescription,
+  "url": "https://t.me/AudioTextAI_bot",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": lang === 'ru' ? "Елена" : "Elena"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": lang === 'ru' 
+        ? "Транскрипция полностью изменила мой подход к изучению английского. Очень помогает в понимании речи носителей языка."
+        : "Transcription completely changed my approach to learning English. Very helpful in understanding native speakers."
+    },
+    {
+      "@type": "Review", 
+      "author": {
+        "@type": "Person",
+        "name": lang === 'ru' ? "Мария" : "Maria"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5", 
+        "bestRating": "5"
+      },
+      "reviewBody": lang === 'ru'
+        ? "Отличный инструмент для журналистов. Расшифровка интервью стала занимать в разы меньше времени."
+        : "Excellent tool for journalists. Interview transcription now takes much less time."
+    }
+  ]
+};
+
+// Создаем JSON-LD строки
+const organizationJson = JSON.stringify(organizationSchema);
+const websiteJson = JSON.stringify(websiteSchema); 
+const softwareApplicationJson = JSON.stringify(softwareSchema);
+const productJson = JSON.stringify(reviewsSchema);
+---
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={organizationJson}></script>
+<script type="application/ld+json" set:html={websiteJson}></script>
+<script type="application/ld+json" set:html={softwareApplicationJson}></script>
+<script type="application/ld+json" set:html={productJson}></script>

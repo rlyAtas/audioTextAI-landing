@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Free AI Audio Transcription | 98 Languages | AudioTextAI",
+    "description": "Transform audio to text with AI. 98 languages, 95%+ accuracy. Free Telegram bot for voice message transcription without registration"
+  },
+  "hero": {
+    "title": "Turn audio into text",
+    "subtitle": "Convert audio messages into accurate text using artificial intelligence. 95%+ accuracy, supports all formats, completely free in Telegram!",
+    "features": "Free • Fast • Accurate"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need for perfect audio transcription",
+    "items": [
+      {
+        "title": "Accurate Transcription",
+        "description": "Advanced AI provides high-quality text conversion with excellent accuracy",
+        "icon": "microphone"
+      },
+      {
+        "title": "Lightning Fast", 
+        "description": "Get your transcription results quickly and efficiently with our optimized processing",
+        "icon": "lightning"
+      },
+      {
+        "title": "Multiple Formats",
+        "description": "Support for voice messages, audio files, and various audio formats",
+        "icon": "audio"
+      },
+      {
+        "title": "Multi-language",
+        "description": "Transcribe audio in 98 languages with automatic detection",
+        "icon": "globe"
+      },
+      {
+        "title": "Secure & Private",
+        "description": "Your audio files are processed securely and not stored permanently",
+        "icon": "shield"
+      },
+      {
+        "title": "Easy & Free",
+        "description": "No registration, no payment - just send audio to the Telegram bot and get results",
+        "icon": "gift"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What users say",
+    "subtitle": "Real stories of using AudioTextAI",
+    "items": [
+      {
+        "text": "Transcription completely changed my approach to learning English. Before, I often couldn't understand what native speakers were saying — everything blended into one stream. But when I started listening to audio with transcription, words and expressions began forming into understandable phrases. I started noticing how sentences are built, how real conversational expressions are used. This gave me confidence and greatly improved my listening comprehension. Now I don't just listen — I truly understand.",
+        "author": "Elena",
+        "role": ""
+      },
+      {
+        "text": "I often record interviews on a voice recorder — and transcription used to take tons of time and nerves. With transcription everything became easier: I upload audio and in a minute I have ready text. This really saves me, especially when deadlines are tight. Plus it's convenient to reread and find the right quotes. Now I spend more time on the essence — not on rewinding recordings back and forth.",
+        "author": "Maria",
+        "role": "Journalist"
+      },
+      {
+        "text": "At work I often receive voice messages, which isn't always convenient — especially during meetings or in noisy places. Transcription became a real lifesaver: I can quickly read the essence without spending time listening. Plus it helps me better understand business English.",
+        "author": "David",
+        "role": "Manager"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to try AudioTextAI?",
+    "subtitle": "Start using AI for transcription right now — no registration, no payment, no limits. Just send audio and get results in seconds.",
+    "button": "Open @AudioTextAI_bot in Telegram"
+  },
+  "footer": {
+    "copyright": "© 2025 AudioTextAI. All rights reserved.",
+    "slogan": "Turn audio into text",
+    "telegram": "@AudioTextAI_bot"
+  }
+}

@@ -1,0 +1,82 @@
+---
+import { getLanguage, getOtherLanguages, getLanguageUrl } from '../i18n/languages';
+
+interface Props {
+  currentLang: string;
+  currentPath?: string;
+  variant?: 'dropdown' | 'buttons';
+}
+
+const { currentLang, currentPath, variant = 'dropdown' } = Astro.props;
+
+const currentLanguage = getLanguage(currentLang);
+const otherLanguages = getOtherLanguages(currentLang);
+---
+
+{variant === 'dropdown' ? (
+  <!-- Dropdown вариант -->
+  <div class="relative group">
+    <button 
+      class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+      aria-label="Select language"
+    >
+      <span class="text-lg">{currentLanguage?.flag}</span>
+      <span class="hidden sm:inline">{currentLanguage?.nativeName}</span>
+      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </button>
+    
+    <!-- Dropdown меню -->
+    <div class="absolute top-full right-0 mt-1 min-w-[120px] bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+      <div class="py-1">
+        {otherLanguages.map((language) => (
+          <a 
+            href={getLanguageUrl(language.code, currentPath)}
+            class="flex items-center gap-2 px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
+          >
+            <span class="text-lg">{language.flag}</span>
+            <span>{language.nativeName}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+) : (
+  <!-- Buttons вариант -->
+  <div class="flex items-center gap-1">
+    <div class="flex items-center gap-1 p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">
+      <span class="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded text-sm font-medium shadow-sm">
+        <span class="text-base">{currentLanguage?.flag}</span>
+        <span class="hidden sm:inline">{currentLanguage?.code.toUpperCase()}</span>
+      </span>
+      {otherLanguages.map((language) => (
+        <a 
+          href={getLanguageUrl(language.code, currentPath)}
+          class="flex items-center gap-1 px-2 py-1 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-white dark:hover:bg-gray-700 rounded text-sm font-medium transition-all duration-200"
+        >
+          <span class="text-base">{language.flag}</span>
+          <span class="hidden sm:inline">{language.code.toUpperCase()}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+)}
+
+<style>
+  /* Улучшенная анимация для dropdown */
+  .group:hover .group-hover\:opacity-100 {
+    animation: fadeInUp 0.2s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

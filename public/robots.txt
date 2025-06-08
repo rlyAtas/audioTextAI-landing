@@ -1,0 +1,20 @@
+# Robots.txt for AudioTextAI Landing Page
+# https://audiotextai.site
+
+User-agent: *
+Allow: /
+
+# Allow all main pages
+Allow: /en/
+Allow: /ru/
+
+# Allow assets
+Allow: /logo.png
+Allow: /favicon.ico
+Allow: /_astro/
+
+# Sitemap location
+Sitemap: https://audiotextai.site/sitemap.xml
+
+# Crawl-delay (optional - good practice for smaller sites)
+Crawl-delay: 1
