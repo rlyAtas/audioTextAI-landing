@@ -4,8 +4,9 @@ import deTranslations from './de.json';
 import frTranslations from './fr.json';
 import esTranslations from './es.json';
 import ukTranslations from './uk.json';
+import arTranslations from './ar.json';
 
-export type Language = 'ru' | 'en' | 'de' | 'fr' | 'es' | 'uk';
+export type Language = 'ru' | 'en' | 'de' | 'fr' | 'es' | 'uk' | 'ar';
 
 export interface Translations {
   meta: {
@@ -54,6 +55,7 @@ const translations: Record<Language, Translations> = {
   fr: frTranslations,
   es: esTranslations,
   uk: ukTranslations,
+  ar: arTranslations,
 };
 
 export function getTranslations(lang: Language): Translations {
@@ -71,4 +73,4 @@ export function t(lang: Language, key: string): string | string[] {
   return value || key;
 }
 
-export const supportedLanguages: Language[] = ['en', 'ru', 'de', 'fr', 'es', 'uk'];
+export const supportedLanguages: Language[] = ['en', 'ru', 'de', 'fr', 'es', 'uk', 'ar'];

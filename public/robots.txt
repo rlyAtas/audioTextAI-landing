@@ -11,6 +11,7 @@ Allow: /de/
 Allow: /fr/
 Allow: /es/
 Allow: /uk/
+Allow: /ar/
 
 # Allow assets
 Allow: /logo.png

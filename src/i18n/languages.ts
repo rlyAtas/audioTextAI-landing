@@ -48,6 +48,13 @@ export const languages: Record<string, Language> = {
     nativeName: 'Українська',
     flag: '🇺🇦',
     path: '/uk'
+  },
+  ar: {
+    code: 'ar',
+    name: 'Arabic',
+    nativeName: 'العربية',
+    flag: '🇸🇦',
+    path: '/ar'
   }
 };
 
