@@ -1,0 +1,27 @@
+name: Deploy to Timeweb Cloud
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy to Timeweb Cloud
+      uses: appleboy/ssh-action@v1.1.0
+      with:
+        host: ${{ vars.SERVER_IP }}
+        username: ${{ vars.SERVER_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /srv/www/audioTextAI-landing
+          git pull origin main
+          npm ci
+          npm run build
+          echo "✅ Deploy complete at $(date)"
