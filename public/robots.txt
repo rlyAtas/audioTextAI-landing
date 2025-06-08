@@ -8,6 +8,7 @@ Allow: /
 Allow: /en/
 Allow: /ru/
 Allow: /de/
+Allow: /fr/
 
 # Allow assets
 Allow: /logo.png

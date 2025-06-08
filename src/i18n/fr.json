@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Transcription Audio IA Gratuite | 98 Langues | AudioTextAI",
+    "description": "Transformez l'audio en texte avec l'IA. 98 langues, 95%+ de précision. Bot Telegram gratuit pour la transcription de messages vocaux sans inscription"
+  },
+  "hero": {
+    "title": "Transformez l'audio en texte",
+    "subtitle": "Convertissez les messages audio en texte précis grâce à l'intelligence artificielle. 95%+ de précision, prend en charge tous les formats, entièrement gratuit sur Telegram !",
+    "features": "Gratuit • Rapide • Précis"
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "subtitle": "Tout ce dont vous avez besoin pour une transcription audio parfaite",
+    "items": [
+      {
+        "title": "Transcription Précise",
+        "description": "L'IA avancée fournit une conversion de texte de haute qualité avec une excellente précision",
+        "icon": "microphone"
+      },
+      {
+        "title": "Ultra Rapide", 
+        "description": "Obtenez vos résultats de transcription rapidement et efficacement avec notre traitement optimisé",
+        "icon": "lightning"
+      },
+      {
+        "title": "Formats Multiples",
+        "description": "Support des messages vocaux, fichiers audio et divers formats audio",
+        "icon": "audio"
+      },
+      {
+        "title": "Multilingue",
+        "description": "Transcrivez l'audio en 98 langues avec détection automatique",
+        "icon": "globe"
+      },
+      {
+        "title": "Sécurisé et Privé",
+        "description": "Vos fichiers audio sont traités en toute sécurité et ne sont pas stockés de façon permanente",
+        "icon": "shield"
+      },
+      {
+        "title": "Simple et Gratuit",
+        "description": "Pas d'inscription, pas de paiement - envoyez simplement l'audio au bot Telegram et obtenez les résultats",
+        "icon": "gift"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que disent les utilisateurs",
+    "subtitle": "Histoires réelles d'utilisation d'AudioTextAI",
+    "items": [
+      {
+        "text": "La transcription a complètement changé mon approche de l'apprentissage de l'anglais. Avant, je ne comprenais souvent pas ce que disaient les locuteurs natifs — tout se mélangeait en un seul flux. Mais quand j'ai commencé à écouter l'audio avec la transcription, les mots et expressions ont commencé à former des phrases compréhensibles. J'ai commencé à remarquer comment les phrases sont construites, comment les vraies expressions conversationnelles sont utilisées. Cela m'a donné confiance et a grandement amélioré ma compréhension auditive. Maintenant je n'écoute pas seulement — je comprends vraiment.",
+        "author": "Elena",
+        "role": ""
+      },
+      {
+        "text": "J'enregistre souvent des interviews sur un dictaphone — et la transcription prenait auparavant énormément de temps et de nerfs. Avec la transcription tout est devenu plus simple : je télécharge l'audio et en une minute j'ai le texte prêt. Cela me sauve vraiment, surtout quand les délais sont serrés. En plus c'est pratique pour relire et trouver les bonnes citations. Maintenant je passe plus de temps sur l'essentiel — pas à rembobiner les enregistrements dans tous les sens.",
+        "author": "Maria",
+        "role": "Journaliste"
+      },
+      {
+        "text": "Au travail je reçois souvent des messages vocaux, ce qui n'est pas toujours pratique — surtout pendant les réunions ou dans des endroits bruyants. La transcription est devenue un vrai sauveur : je peux rapidement lire l'essentiel sans passer du temps à écouter. En plus cela m'aide à mieux comprendre l'anglais professionnel.",
+        "author": "David",
+        "role": "Manager"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Prêt à essayer AudioTextAI ?",
+    "subtitle": "Commencez à utiliser l'IA pour la transcription dès maintenant — pas d'inscription, pas de paiement, pas de limites. Envoyez simplement l'audio et obtenez des résultats en quelques secondes.",
+    "button": "Ouvrir @AudioTextAI_bot dans Telegram"
+  },
+  "footer": {
+    "copyright": "© 2025 AudioTextAI. Tous droits réservés.",
+    "slogan": "Transformez l'audio en texte",
+    "telegram": "@AudioTextAI_bot"
+  }
+}

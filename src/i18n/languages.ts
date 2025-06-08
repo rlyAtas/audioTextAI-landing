@@ -27,6 +27,13 @@ export const languages: Record<string, Language> = {
     nativeName: 'Deutsch',
     flag: '🇩🇪',
     path: '/de'
+  },
+  fr: {
+    code: 'fr',
+    name: 'French',
+    nativeName: 'Français',
+    flag: '🇫🇷',
+    path: '/fr'
   }
 };
 
