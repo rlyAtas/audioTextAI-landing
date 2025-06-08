@@ -15,20 +15,25 @@ const otherLanguages = getOtherLanguages(currentLang);
 
 {variant === 'dropdown' ? (
   <!-- Dropdown вариант -->
-  <div class="relative group">
+  <div class="relative" data-language-dropdown>
     <button 
       class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
       aria-label="Select language"
+      data-dropdown-trigger
+      aria-expanded="false"
     >
       <span class="text-lg">{currentLanguage?.flag}</span>
       <span class="hidden sm:inline">{currentLanguage?.nativeName}</span>
-      <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-4 h-4 transition-transform duration-200" data-dropdown-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </button>
     
     <!-- Dropdown меню -->
-    <div class="absolute top-full right-0 mt-1 min-w-[120px] bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <div 
+      class="absolute top-full right-0 mt-1 min-w-[120px] bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg opacity-0 invisible transform translate-y-[-10px] transition-all duration-200 z-50"
+      data-dropdown-menu
+    >
       <div class="py-1">
         {otherLanguages.map((language) => (
           <a 
@@ -64,11 +69,18 @@ const otherLanguages = getOtherLanguages(currentLang);
 )}
 
 <style>
-  /* Улучшенная анимация для dropdown */
-  .group:hover .group-hover\:opacity-100 {
-    animation: fadeInUp 0.2s ease-out forwards;
+  /* Класс для открытого состояния dropdown */
+  [data-language-dropdown].is-open [data-dropdown-menu] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   
+  [data-language-dropdown].is-open [data-dropdown-arrow] {
+    transform: rotate(180deg);
+  }
+  
+  /* Улучшенная анимация для dropdown */
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -80,3 +92,65 @@ const otherLanguages = getOtherLanguages(currentLang);
     }
   }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Находим все dropdown элементы на странице
+    const dropdowns = document.querySelectorAll('[data-language-dropdown]');
+    
+    dropdowns.forEach(dropdown => {
+      const trigger = dropdown.querySelector('[data-dropdown-trigger]');
+      const menu = dropdown.querySelector('[data-dropdown-menu]');
+      
+      if (!trigger || !menu) return;
+      
+      // Функция для открытия dropdown
+      const openDropdown = () => {
+        // Закрываем другие открытые dropdown
+        dropdowns.forEach(otherDropdown => {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('is-open');
+            const otherTrigger = otherDropdown.querySelector('[data-dropdown-trigger]');
+            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        dropdown.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      };
+      
+      // Функция для закрытия dropdown
+      const closeDropdown = () => {
+        dropdown.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      };
+      
+      // Обработчик клика по кнопке
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (dropdown.classList.contains('is-open')) {
+          closeDropdown();
+        } else {
+          openDropdown();
+        }
+      });
+      
+      // Закрытие при клике вне dropdown
+      document.addEventListener('click', (e) => {
+        if (!dropdown.contains(e.target as Node)) {
+          closeDropdown();
+        }
+      });
+      
+      // Закрытие при нажатии Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && dropdown.classList.contains('is-open')) {
+          closeDropdown();
+          (trigger as HTMLElement).focus(); // Возвращаем фокус на кнопку
+        }
+      });
+    });
+  });
+</script>
