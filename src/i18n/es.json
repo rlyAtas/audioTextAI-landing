@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Transcripción de Audio IA Gratuita | 98 Idiomas | AudioTextAI",
+    "description": "Convierte audio en texto con IA. 98 idiomas, 95%+ precisión. Bot de Telegram gratuito para transcripción de mensajes de voz sin registro"
+  },
+  "hero": {
+    "title": "Convierte audio en texto",
+    "subtitle": "Transforma mensajes de audio en texto preciso usando inteligencia artificial. 95%+ de precisión, soporta todos los formatos, ¡completamente gratis en Telegram!",
+    "features": "Gratis • Rápido • Preciso"
+  },
+  "features": {
+    "title": "Características",
+    "subtitle": "Todo lo que necesitas para una transcripción de audio perfecta",
+    "items": [
+      {
+        "title": "Transcripción Precisa",
+        "description": "La IA avanzada proporciona conversión de texto de alta calidad con excelente precisión",
+        "icon": "microphone"
+      },
+      {
+        "title": "Ultra Rápido", 
+        "description": "Obtén tus resultados de transcripción rápida y eficientemente con nuestro procesamiento optimizado",
+        "icon": "lightning"
+      },
+      {
+        "title": "Múltiples Formatos",
+        "description": "Soporte para mensajes de voz, archivos de audio y varios formatos de audio",
+        "icon": "audio"
+      },
+      {
+        "title": "Multiidioma",
+        "description": "Transcribe audio en 98 idiomas con detección automática",
+        "icon": "globe"
+      },
+      {
+        "title": "Seguro y Privado",
+        "description": "Tus archivos de audio se procesan de forma segura y no se almacenan permanentemente",
+        "icon": "shield"
+      },
+      {
+        "title": "Simple y Gratuito",
+        "description": "Sin registro, sin pagos - simplemente envía el audio al bot de Telegram y obtén los resultados",
+        "icon": "gift"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen los usuarios",
+    "subtitle": "Historias reales de uso de AudioTextAI",
+    "items": [
+      {
+        "text": "La transcripción cambió completamente mi enfoque para aprender inglés. Antes, a menudo no entendía lo que decían los hablantes nativos — todo se mezclaba en una sola corriente. Pero cuando comencé a escuchar audio con transcripción, las palabras y expresiones comenzaron a formar oraciones comprensibles. Comencé a notar cómo se construyen las frases, cómo se usan las expresiones conversacionales reales. Esto me dio confianza y mejoró enormemente mi comprensión auditiva. Ahora no solo escucho — realmente entiendo.",
+        "author": "Elena",
+        "role": ""
+      },
+      {
+        "text": "A menudo grabo entrevistas en una grabadora — y la transcripción antes tomaba mucho tiempo y nervios. Con la transcripción todo se volvió más simple: subo el audio y en un minuto tengo el texto listo. Esto realmente me salva, especialmente cuando los plazos son ajustados. Además es conveniente para releer y encontrar las citas correctas. Ahora paso más tiempo en lo esencial — no rebobinando grabaciones.",
+        "author": "María",
+        "role": "Periodista"
+      },
+      {
+        "text": "En el trabajo recibo a menudo mensajes de voz, lo cual no siempre es conveniente — especialmente durante reuniones o en lugares ruidosos. La transcripción se convirtió en un verdadero salvavidas: puedo leer rápidamente lo esencial sin perder tiempo escuchando. Además me ayuda a entender mejor el inglés profesional.",
+        "author": "David",
+        "role": "Gerente"
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para probar AudioTextAI?",
+    "subtitle": "Comienza a usar IA para transcripción ahora mismo — sin registro, sin pagos, sin límites. Simplemente envía el audio y obtén resultados en segundos.",
+    "button": "Abrir @AudioTextAI_bot en Telegram"
+  },
+  "footer": {
+    "copyright": "© 2025 AudioTextAI. Todos los derechos reservados.",
+    "slogan": "Convierte audio en texto",
+    "telegram": "@AudioTextAI_bot"
+  }
+}

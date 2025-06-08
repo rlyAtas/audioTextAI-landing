@@ -9,6 +9,7 @@ Allow: /en/
 Allow: /ru/
 Allow: /de/
 Allow: /fr/
+Allow: /es/
 
 # Allow assets
 Allow: /logo.png

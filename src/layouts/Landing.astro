@@ -4,7 +4,7 @@ import LanguageSwitcher from '../components/LanguageSwitcher.astro';
 
 export interface Props {
   title: string;
-  lang: 'ru' | 'en' | 'de' | 'fr';
+  lang: 'ru' | 'en' | 'de' | 'fr' | 'es';
   canonicalUrl?: string;
   meta?: {
     description?: string;
@@ -32,6 +32,10 @@ const defaultMeta = {
   fr: {
     description: 'Transcription Audio IA Gratuite. 98 langues, 95%+ de précision. Bot Telegram AudioTextAI',
     keywords: 'transcription audio, messages vocaux, IA, bot telegram, 98 langues, gratuit, AudioTextAI',
+  },
+  es: {
+    description: 'Transcripción de Audio IA Gratuita. 98 idiomas, 95%+ precisión. Bot de Telegram AudioTextAI',
+    keywords: 'transcripción audio, mensajes de voz, IA, bot telegram, 98 idiomas, gratis, AudioTextAI',
   },
 };
 
@@ -68,13 +72,13 @@ const websiteSchema = {
   "name": "AudioTextAI",
   "description": currentMeta.description,
   "url": fullUrl,
-  "inLanguage": lang === 'ru' ? 'ru-RU' : lang === 'de' ? 'de-DE' : lang === 'fr' ? 'fr-FR' : 'en-US'
+  "inLanguage": lang === 'ru' ? 'ru-RU' : lang === 'de' ? 'de-DE' : lang === 'fr' ? 'fr-FR' : lang === 'es' ? 'es-ES' : 'en-US'
 };
 
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": lang === 'ru' ? "AudioTextAI Telegram Бот" : lang === 'de' ? "AudioTextAI Telegram Bot" : lang === 'fr' ? "AudioTextAI Bot Telegram" : "AudioTextAI Telegram Bot",
+  "name": lang === 'ru' ? "AudioTextAI Telegram Бот" : lang === 'de' ? "AudioTextAI Telegram Bot" : lang === 'fr' ? "AudioTextAI Bot Telegram" : lang === 'es' ? "AudioTextAI Bot de Telegram" : "AudioTextAI Telegram Bot",
   "description": currentMeta.description,
   "url": "https://t.me/AudioTextAI_bot",
   "applicationCategory": "ProductivityApplication",
@@ -82,7 +86,7 @@ const softwareSchema = {
   "offers": {
     "@type": "Offer",
     "price": "0",
-    "priceCurrency": lang === 'ru' ? 'RUB' : lang === 'de' ? 'EUR' : lang === 'fr' ? 'EUR' : 'USD',
+    "priceCurrency": lang === 'ru' ? 'RUB' : lang === 'de' ? 'EUR' : lang === 'fr' ? 'EUR' : lang === 'es' ? 'EUR' : 'USD',
     "availability": "https://schema.org/InStock"
   },
   "aggregateRating": {
@@ -114,6 +118,7 @@ const softwareJsonLD = JSON.stringify(softwareSchema);
     <link rel="alternate" hreflang="ru" href="https://audiotextai.site/ru/" />
     <link rel="alternate" hreflang="de" href="https://audiotextai.site/de/" />
     <link rel="alternate" hreflang="fr" href="https://audiotextai.site/fr/" />
+    <link rel="alternate" hreflang="es" href="https://audiotextai.site/es/" />
     <link rel="alternate" hreflang="x-default" href="https://audiotextai.site/en/" />
     
     <!-- Favicon -->
@@ -130,7 +135,7 @@ const softwareJsonLD = JSON.stringify(softwareSchema);
     <meta property="og:image" content={currentMeta.ogImage} />
     <meta property="og:url" content={fullUrl} />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : lang === 'de' ? 'de_DE' : lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : lang === 'de' ? 'de_DE' : lang === 'fr' ? 'fr_FR' : lang === 'es' ? 'es_ES' : 'en_US'} />
     <meta property="og:site_name" content="AudioTextAI" />
     
     <!-- Twitter Card -->
