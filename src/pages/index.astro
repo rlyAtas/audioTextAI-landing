@@ -1,4 +1,24 @@
 ---
-// Редирект на английскую версию как основную
-return Astro.redirect('/en');
+// Главная страница - будет редиректить через nginx
+import Landing from '../layouts/Landing.astro';
+import { getTranslations } from '../i18n';
+
+const lang = 'en'; // Default language
+const t = getTranslations(lang);
 ---
+
+<Landing 
+  title={t.meta.title}
+  lang={lang}
+  canonicalUrl="https://audiotextai.site/"
+>
+  <!-- Простая страница с мета-редиректом для случаев, когда nginx не сработает -->
+  <script>
+    window.location.href = '/en/';
+  </script>
+  
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+    <p><a href="/en/">Click here to go to the main page</a></p>
+  </noscript>
+</Landing>
