@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Градиент для светлой темы -->
+    <linearGradient id="backgroundGradientLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D9488;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Градиент для темной темы -->
+    <linearGradient id="backgroundGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Градиент для плавного перехода -->
+    <linearGradient id="transitionGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Стили для адаптации к системной теме -->
+  <style>
+    .light-theme { fill: url(#backgroundGradientLight); }
+    .dark-theme { fill: url(#backgroundGradientDark); display: none; }
+    
+    @media (prefers-color-scheme: dark) {
+      .light-theme { display: none; }
+      .dark-theme { display: block; fill: url(#backgroundGradientDark); }
+    }
+  </style>
+  
+  <!-- Круглый фон с адаптивным градиентом -->
+  <circle class="light-theme" cx="256" cy="256" r="240" stroke="#ffffff" stroke-width="8"/>
+  <circle class="dark-theme" cx="256" cy="256" r="240" stroke="#000000" stroke-width="8"/>
+  
+  <!-- Звуковые волны (левая часть) -->
+  <!-- Короткая линия -->
+  <rect x="140" y="220" width="12" height="72" rx="6" fill="#ffffff"/>
+  
+  <!-- Средняя линия -->
+  <rect x="165" y="190" width="12" height="132" rx="6" fill="#ffffff"/>
+  
+  <!-- Длинная линия -->
+  <rect x="190" y="160" width="12" height="192" rx="6" fill="#ffffff"/>
+  
+  <!-- Средняя линия -->
+  <rect x="215" y="200" width="12" height="112" rx="6" fill="#ffffff"/>
+  
+  <!-- Короткая линия -->
+  <rect x="240" y="230" width="12" height="52" rx="6" fill="#ffffff"/>
+  
+  <!-- Плавный переход в центре -->
+  <path d="M 252 180 Q 280 200 280 256 Q 280 312 252 332" fill="url(#transitionGradient)" opacity="0.9"/>
+  
+  <!-- Текстовые линии (правая часть) -->
+  <!-- Верхняя линия -->
+  <rect x="300" y="200" width="120" height="12" rx="6" fill="#ffffff"/>
+  
+  <!-- Вторая линия -->
+  <rect x="300" y="230" width="100" height="12" rx="6" fill="#ffffff"/>
+  
+  <!-- Третья линия -->
+  <rect x="300" y="260" width="110" height="12" rx="6" fill="#ffffff"/>
+  
+  <!-- Нижняя линия -->
+  <rect x="300" y="290" width="90" height="12" rx="6" fill="#ffffff"/>
+</svg>
+
